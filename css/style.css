@@ -14,16 +14,70 @@ body{
     background-color: rgba(0, 0, 0, 0.377);
 }
 
+h1{
+    color: #fff;
+}
+
 video{
-    width: 50%;
+    width: 60%;
     background-color: black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 25px
 }
 
 .controls{
-    background-color: rgb(186, 217, 231);
-    width: 50%;
+    background-color: rgb(55, 58, 59);
+    width: 60%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
+
+@media(max-width:800px){
+    .screen,
+    .controls{
+        width: 90%;
+    }
+}
+
+span.timestamp{
+    color: #fff;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+span.timestamp:hover{
+    transform: scale(1.2);
+}
+
+
+.controls .btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .btn#play{
+   color: rgb(142, 224, 131);
+}
+
+.controls .btn#stop{
+    color: rgb(214, 65, 65);
+ }
+
+ .controls .fa-pause{
+    color: rgb(142, 224, 131);
+ }
+
+ .btn:focus{
+     outline: 0;
+ }
+
+ .btn:hover{
+    transform:scale(1.2);
+ }
